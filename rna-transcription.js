@@ -3,6 +3,8 @@ export const toRna = (string) => {
     return "C";
   else if (string === "C")
     return "G";
+  else if (string === "A")
+    return "U"
   else
     return "";
 }

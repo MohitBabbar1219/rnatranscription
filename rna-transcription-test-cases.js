@@ -1,7 +1,3 @@
-xtest('transcribes adenine to uracil', () => {
-  expect(toRna('A')).toEqual('U');
-});
-
 xtest('transcribes thymine to adenine', () => {
   expect(toRna('T')).toEqual('A');
 });
