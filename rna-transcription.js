@@ -1,12 +1,15 @@
-export const toRna = (string) => {
-  if(string === "G")
+const dnaToRnaMap = (character) => {
+  if(character === "G")
     return "C";
-  else if (string === "C")
+  else if (character === "C")
     return "G";
-  else if (string === "A")
+  else if (character === "A")
     return "U";
-  else if (string === "T")
+  else if (character === "T")
     return "A";
   else
     return "";
+};
+export const toRna = (string) => {
+  return string.split("").map(character => dnaToRnaMap(character)).join("");
 };
