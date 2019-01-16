@@ -8,7 +8,7 @@ const dnaToRnaMap = (character) => {
   else if (character === "T")
     return "A";
   else
-    return "";
+    throw "Invalid input DNA."
 };
 export const toRna = (string) => {
   return string.split("").map(character => dnaToRnaMap(character)).join("");

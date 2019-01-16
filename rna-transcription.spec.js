@@ -20,4 +20,7 @@ describe('Transcriptor', () => {
     expect(toRna('ACGTGGTCTTAA'))
       .toEqual('UGCACCAGAAUU');
   });
+  test('correctly handles invalid input', () => {
+    expect(() => toRna('U')).toThrow(new Error('Invalid input DNA.'));
+  });
 });
