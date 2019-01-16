@@ -26,4 +26,8 @@ describe('Transcriptor', () => {
   test('correctly handles completely invalid input', () => {
     expect(() => toRna('XXX')).toThrow(new Error('Invalid input DNA.'));
   });
+  test('correctly handles partially invalid input', () => {
+    expect(() => toRna('ACGTXXXCTTAA')).toThrow(new Error('Invalid input DNA.'));
+  });
+
 });
