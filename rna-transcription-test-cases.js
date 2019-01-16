@@ -1,12 +1,3 @@
-import { toRna } from './rna-transcription';
-
-xtest('empty rna sequence', () => {
-  expect(toRna('')).toEqual('');
-});
-
-xtest('transcribes cytosine to guanine', () => {
-  expect(toRna('C')).toEqual('G');
-});
 
 xtest('transcribes guanine to cytosine', () => {
   expect(toRna('G')).toEqual('C');
