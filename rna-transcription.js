@@ -1,3 +1,9 @@
 export const toRna = (string) => {
-  return string === "C" ? "G" : "";
+  if(string === "G")
+    return "C";
+  else if (string === "C")
+    return "G";
+  else
+    return "";
 }
+
