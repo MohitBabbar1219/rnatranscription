@@ -4,8 +4,9 @@ export const toRna = (string) => {
   else if (string === "C")
     return "G";
   else if (string === "A")
-    return "U"
+    return "U";
+  else if (string === "T")
+    return "A";
   else
     return "";
-}
-
+};

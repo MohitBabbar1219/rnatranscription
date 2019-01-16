@@ -1,6 +1,4 @@
-xtest('transcribes thymine to adenine', () => {
-  expect(toRna('T')).toEqual('A');
-});
+
 
 xtest('transcribes all dna nucleotides to their rna complements', () => {
   expect(toRna('ACGTGGTCTTAA'))
